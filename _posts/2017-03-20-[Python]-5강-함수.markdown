@@ -18,6 +18,7 @@ def ex_func() :
 
 실습 예제를 살펴봅시다.
 
+예제 1
 {% highlight ruby %}
 def print_lyrics():
     print "I'm a lumberjack, and I'm okay."
@@ -34,6 +35,7 @@ repeat_lyrics()
 
 ![](https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/17361279_659611907569117_1725316074_n.png?oh=603cf9d34e49f4926f597f231dcf687e&oe=58D21316)
 
+예제 2
 {% highlight ruby %}
 repeat_lyrics()
 
@@ -48,6 +50,7 @@ def repeat_lyrics():
 
 실행 결과
 
+![](https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/17409991_659611914235783_870636313_n.png?oh=4fe7dad712cb8fa83d48ed8f004bf162&oe=58D1DF4C)
 명령어의 정상 작동이 불가능합니다.
 함수가 선언되기 이전에 함수를 호출했기 때문에 오류가 발생하기 때문입니다.
 
