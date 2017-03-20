@@ -1,0 +1,28 @@
+title: Blog by Jooho
+email: joey91426@gmail.com
+author:
+  picture: https://scontent-icn1-1.xx.fbcdn.net/v/t31.0-8/s960x960/16700584_637935143070127_8219308016669016465_o.jpg?oh=309358045a2ac628768b3adc4084a96d&oe=595DD1FB #URL FORMAT
+  name: Jooho Lee
+  location: Seoul - Korea
+  description: "19 years old, studying computer science"  
+description: Just Test (description)
+baseurl: "/"
+url: https://joey914.github.io/
+twitter_username: hugocolombo23
+github_username:  joey91426
+github_url: https://joey914.github.io/
+
+# Build settings
+permalink: :title
+paginate: 1
+paginate_path: "page:num"
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
