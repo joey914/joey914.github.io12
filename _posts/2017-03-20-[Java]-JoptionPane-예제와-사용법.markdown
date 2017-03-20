@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Java 수업] JOptionpane 예제와 사용법"
+title:  "[Java 수업] JOptionPane 예제와 사용법"
 date:   2017-03-21 10:30:27 -0800
 author: Jooholee
 description: "선린인터넷고 JAVA 시간에 학습한 JOptionpane에 관한 내용입니다."
