@@ -25,7 +25,7 @@ public class Exa {
 
 실행 결과
 
-![](http://imgur.com/BMbwhaj)
+![](http://i.imgur.com/BMbwhaj.png)
 
 {% highlight ruby %}
 package j;
@@ -43,9 +43,9 @@ public class Exa {
 
 실행 결과
 
-![](http://imgur.com/JdOrm01)
+![](http://i.imgur.com/JdOrm01.png)
 
-![](http://imgur.com/ydy2fSc)
+![](http://i.imgur.com/ydy2fSc.png)
 
 
 
