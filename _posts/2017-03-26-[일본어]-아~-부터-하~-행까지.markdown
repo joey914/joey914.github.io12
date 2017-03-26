@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "[일본어] 아~ 부터 하~ 행까지"
+date:   2017-03-26 12:30:27 -0800
+author: Jooholee
+description: "선린인터넷고 일본어 시간에 학습한 일본어의 아~부터 하~행까지의 내용입니다."
+---
+업데이트 에정입니다.
+
+[jekyll-docs]: http://joey914.github.io/home
+[jekyll-gh]:   https://github.com/joey914/joey914
+[jekyll-talk]: https://talk.joey914.com/
