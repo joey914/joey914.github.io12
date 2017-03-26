@@ -25,7 +25,7 @@ public class Exa {
 
 실행 결과
 
-![](https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/17409826_659613600902281_1673877171_n.png?oh=745d025504d6d1a48cdd49c59a60835c&oe=58D2DDB6)
+![](http://imgur.com/BMbwhaj)
 
 {% highlight ruby %}
 package j;
@@ -43,9 +43,9 @@ public class Exa {
 
 실행 결과
 
-![](https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/17409688_659613624235612_29208563_n.png?oh=724d65133ebbd0388c353579808f55d1&oe=58D2FBAE)
+![](http://imgur.com/JdOrm01)
 
-![](https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/17410213_659613597568948_821780634_n.png?oh=5bf06209274ade89631220a14fef1b7b&oe=58D1DE35)
+![](http://imgur.com/ydy2fSc)
 
 
 
