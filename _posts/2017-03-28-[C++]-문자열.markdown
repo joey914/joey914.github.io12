@@ -71,7 +71,7 @@ int main(void)
 str1문자열을 입력하세요 : 안녕하세요(입력값)
 안녕하세요
 복사할거얌
-{% endhighlight % }
+{% endhighlight %}
 
 strcat
 
