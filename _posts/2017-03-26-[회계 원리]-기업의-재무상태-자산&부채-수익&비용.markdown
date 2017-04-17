@@ -3,6 +3,7 @@ layout: post
 title:  "[회계 원리] 기업의 재무상태 자산&부채 수익&비용"
 date:   2017-03-26 10:30:27 -0800
 author: Jooholee
+tags: [Sunrin, 회계 원리]
 description: "선린인터넷고 회계 원리 시간에 학습한 자산&부채와 수익&비용에 관한 내용입니다."
 ---
 
