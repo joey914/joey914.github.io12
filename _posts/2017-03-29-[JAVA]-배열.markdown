@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Java] JVM과 메모리 관리"
+title:  "[Java] 배열"
 date:   2017-03-29 15:05:27 -0800
 tags: [Sunrin, JAVA]
 author: Jooholee
@@ -113,7 +113,9 @@ c[0]=5 c[1]=6 c[2]=7
 
 선언방식은 위에서 다루었던 1차원 배열에서, 칸을 하나 더 추가하면 됩니다.
 ex)
+
 int [] good; -- 1차원 배열의 방식
+
 int [][] good -- 2차원 배열의 방식
 
 고럼 예제부터 볼까요,
