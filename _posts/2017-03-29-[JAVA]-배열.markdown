@@ -1,0 +1,157 @@
+---
+layout: post
+title:  "[Java] JVM과 메모리 관리"
+date:   2017-03-29 15:05:27 -0800
+author: Jooholee
+description: "선린인터넷고 JAVA 시간에 학습한 배열에 관한 내용입니다."
+
+---
+
+배열
+
+배열은 이전에도 여러번 학습해왔듯이 정수면 정수, 문자면 문자인 데이터들이 일련의 순서대로 저장되어 모아져 있는 데이터를 배열이라고 한답니다.
+
+우선 예제부터 봅시다이,,
+
+{%highlight ruby%}
+
+public class Arrexam {
+  public static void main(String[] args) {
+    int []jang = new int[5]; //1
+    int []jang1; //2
+    jang1 = new int[5]; //2
+  }
+}
+
+{%endhighlight%}
+
+위에 짜여진 코드를 보면요, jang과, jang1 이 두가지의 배열을 선언하긴 했는데 선언한 방식이 다르죠? 하지만 결과는 정수형 배열, 크기가 5인, 배열이 선언된 것은 동일하답니다.
+
+위의 코드는 여러가지가 있다- 정도를 알려주는 예제구요, 실제로 선언되는 배열의 종류를 보면
+
+배열의 선언 방법
+  1. 자료형 [] 배열명; ex) int [] good;
+  2. 자료형 배열명 []; ex) int good [];
+
+이렇게 두 가지의 방법이 있구요, 자료형은 기본으로 알고있는 자료형 8가지와, class형까지 모두 사용할 수 있습니다.
+
+배열의 초기화 방법
+  1. 자료형 [] 배열명 = {데이터1, 데이터2, --데이터n};
+  2. 배열명 = new 자료형 [개수];
+  3. 배열명 = new 자료형 []{데이터1, 데이터2, --데이터n};
+
+배열의 초기화에는 이렇게 세 가지의 방법이 있습니다.
+1)번의 경우는 선언과 동시에 초기화를 하구요,
+2)번과 3)번은 이미 선언되어 있는 배열을 초기화 하는 방법입니다.
+
+배열을 선언하고 초기화(기본값 설정) 하였다면, 유용하게 사용할 수 있는 메서드가 하나 있는데요, 바로 배열의 길이를 알 수 있는 length입니다.
+이후 클래스에서도 다루겠지만 Java에서는 특정 클래스나, 변수의 메서드에 접근하기 위해서는 .(dot)연산자를 사용합니다. 이름은 거창하지만., 사용하기 어렵지 않습니다.
+ex) hoh.length
+위와 같이 사용을 하면, hoh라는 배열객체의 길이를 표시한다는 겁니다.
+
+그롬 한번 사용을해볼까나요/?
+
+{%highlight ruby%}
+
+public class Arrexam {
+  public static void main(String[] args) {
+    int a[];
+    a = new int[3];
+
+    int b[] = new int[2];
+    b[0] = 10;
+    b[1] = 20;
+
+    int c[] = new int[]{5,6,7};
+
+    System.out.println("Length of Array a = " + a.length);
+
+    for(int n = 0 ; n < a.length ; n++)
+    {
+      System.out.print("a["+n+"]=" + a[n] + " ");
+    }
+
+    System.out.println("Length of Array b = " + b.length);
+
+    for(int n = 0 ; n < b.length ; n++)
+    {
+      System.out.print("b["+n+"]=" + b[n] + " ");
+    }
+
+    System.out.println("Length of Array c = " + c.length);
+
+    for(int n = 0 ; n < c.length ; n++)
+
+    {
+      System.out.print("c["+n+"]=" + c[n] + " ");
+    }
+  }
+}
+
+{%endhighlight%}
+
+위 코드에 대해 대략 설명을 하자면, a라는 이름을 가진, 길이가 3인 배열을 선언해주고, b라는 이름을 가진, 길이가 2인 배열을 선언하고 나서 초기화를 해줍니다. 다음 c라는 이름을 가지고 길이가 3인 배열은 선언과 동시에 초기화를 해줍니다.
+
+선언/초기화 과정이 끝나게 되면 각 클래스의 길이와, 각각의 값에 무엇이 저장되어 있는지 출력이 되는데요, 결과도 알아볼까요??!!
+
+{%highlight ruby%}
+
+Length of Array a = 3
+a[0]=0 a[1]=0 a[2]=0
+Length of Array b = 2
+b[0]=10 b[1]=20
+Length of Array c = 3
+c[0]=5 c[1]=6 c[2]=7
+
+{%endhighlight%}
+
+요로코롬 출력이 됩니다. 예상했던 결과죠?
+이렇게 출력되는것을 미루어 보아 c언어에서 초기화 하지 않으면 쑤레기값이 저장되는 것과는 달리 Java에서는 Smart하게 0이 들어간다는 것울 알수있다 이거입니다.
+
+자, 다음은 이차원 배열에 대해서 볼건뎁쇼, 이차원 배열도 여지껏 해왔던 그것과 크게 차이가 없습니다.
+
+선언방식은 위에서 다루었던 1차원 배열에서, 칸을 하나 더 추가하면 됩니다.
+ex)
+int [] good; -- 1차원 배열의 방식
+int [][] good -- 2차원 배열의 방식
+
+고럼 예제부터 볼까요,
+
+{%highlight ruby%}
+
+public class Arrexam {
+  public static void main(String[] args) {
+    int [][]arr = new int[2][3];
+    arr[0][0]=1;
+    arr[0][1]=2;
+    arr[0][2]=3;
+    arr[1][0]=4;
+    arr[1][1]=5;
+    arr[1][2]=6;
+    for(int i=0;i<arr.length;i++)
+    {
+      for(int j=0;j<arr[0].length;j++)
+      {
+        System.out.printf("%3d",arr[i][j]);
+      }
+      System.out.printf("\n");
+    }
+  }
+}
+
+{%endhighlight%}
+
+위 예제에서 볼 수 있듯이, int[2][3]은 3개의 칸을 가진 2개의 칸을 생성하라는 말로, 총 6개의 칸을 생성하는것과 같습니다. 표로 보면 2행 3열의 표를 만들라는 것과 비슷하겠네요.
+
+따라서, 예상하시는 것과 같이 결과값은 요렇습니다.
+
+{%highlight ruby%}
+1 2 3
+4 5 6
+{%endhighlight%}
+
+지금까지 자바의 배열에 대해 살펴봤구 다음에는 다른 주제로다가 오겟습니다.
+
+[jekyll-docs]: http://joey914.github.io/home
+[jekyll-gh]:   https://github.com/joey914/joey914
+[jekyll-talk]: https://talk.joey914.com/
