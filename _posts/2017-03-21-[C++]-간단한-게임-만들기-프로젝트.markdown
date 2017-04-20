@@ -2,6 +2,7 @@
 layout: post
 title:  "[C++] 간단한 게임 만들기 프로젝트"
 date:   2017-03-21 11:05:27 -0800
+tags: [Sunrin, Gameprogramming]
 author: Jooholee
 description: "선린인터넷고 게임프로그래밍 시간에 진행 했던 프로젝트 입니다."
 ---
