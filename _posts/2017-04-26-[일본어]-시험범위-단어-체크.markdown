@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[일본어] 일본어 단어모음 핵꿀"
-date:   2017-03-26 12:30:27 -0800
+date:   2017-04-26 12:30:27 -0800
 author: Jooholee
 tags: [Sunrin, Japanese]
 description: "일본어 암기할때 꿀일듯 ㅇㅈ?"
